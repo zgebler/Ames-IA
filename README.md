@@ -35,6 +35,8 @@
 
 ![Qualitative Features](data/assets/qual_features.PNG)
 
+![Spearman Correlation](data/assets/spearman.PNG)
+
 
 ## Modeling
 
