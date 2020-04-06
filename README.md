@@ -39,17 +39,25 @@
 ## Modeling
 
 - Two Models were fit on the training data
-    - A Linear Regression Model - RMSE: 0.14827
-    - A DNNRegressor using the Tensorflows Esitmator API
+
+    -A Linear Regression
+        - Results:
+        
+    ![LinReg Results](data/assets/Linreg_rsults.PNG)   
     
 
+    -A DNNRegressor using the Tensorflows Esitmator API
+        - Results:
+
+    ![DNNREsults](data/assets/DNNResults.PNG)
+    
+    
 
 ### Conclusions
 
-Features to consider - garage quality, basement condition, living area, all significantly positively correlated with Housing Price
-
-Neighborhoods to watch - Stonebridge and Northbridge Heights have the highest housing pricesan and square footage
+Both Models were able to predict housing prices, based on a subset of features. The models identified intuitive features like Size of House, Overall Quality of house, Quality of Foundation, Kitcehn Quality Garage size, type, and quality, and Neighborhood. This gives a good indication that these features are key drivers of housing value. It also suggests that homeowners looking to improve value of house can focus on improving kitchen, basement, and garage quality.
 
 ### Further Study
 
-Create neighborhood buckets and find stronger relationship between location and price
+- How can neighborhood variable be futher explored, beyond encoding based on price
+- Creating custom model from Tensorflows to make more specific input and activation functions
