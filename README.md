@@ -1,7 +1,7 @@
 # AMES IA Housing Data - EDA and Modeling
 
 
-![LinReg Results](data/assets/Linreg_rsults.PNG)
+![LinReg Results](data/assets/Linreg_results.PNG)
 
 
 
@@ -43,13 +43,13 @@
     -A Linear Regression
         - Results:
         
-    ![LinReg Results](data/assets/Linreg_rsults.PNG)   
+    ![LinReg Results](data/assets/Linreg_results.PNG)   
     
 
     -A DNNRegressor using the Tensorflows Esitmator API
         - Results:
 
-    ![DNNREsults](data/assets/DNNResults.PNG)
+    ![DNNREesults](data/assets/DNNR_results.PNG)
     
     
 
