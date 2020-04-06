@@ -1,31 +1,47 @@
-# Project 2 - Ames Housing Data and Kaggle Challenge
+# AMES IA Housing Data - EDA and Modeling
+
+
+![LinReg Results](data/assets/Linreg_rsults.PNG)
 
 
 
-## Question
+## Overview and Current Status
+- EDA, feature selection, and modeling of the AMES IA housing dataset
+- Model parameters can be further optimized
+- More work can be done including location-based features
 
-What are the factors that drive housing prices? How can we build a model that will predict the price of a house?
+### Workflow
+1. EDA - loads the Housing data, cleans and investigates the data, and selects features for Modeling
+2. Modeling - instantiates and runs and Linear Model and a DNNRegressor using the Tensorflows API
+
+### Problem Statement
+- What are the key drivers of housing prices?
+- Can we build a generalized model that is able to make sense of qualitative and quantitave features?
 
 
 ## DATA
 
-data dictionary located here: (http://jse.amstat.org/v19n3/decock/DataDocumentation.txt)
+### Ames IA Housing Dataset
+- Data located here: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
+- Data Documentation located here: (http://jse.amstat.org/v19n3/decock/DataDocumentation.txt)
 
 
-Training data set: 2037 rows X 81 columns
+## EDA and Feature Selection
 
-Missing Values - Formatting conditions. no significant errors in data
+- Potential features were identified by filling missing values, investigating distributions, and checking relationships between each feature and the target variable - SalePrice.
+- Categorical Variables were grouped by sale price, and encoded as numeric, to allow for more flexibility in modeling
+- Features were selected based on their relative strength in prediciting the target variable, and for their intuitive interpretatiblity, striking a balance between overfitting the model and model performance
 
-Outliers - per data dictionary, removed houses with living area > 4000 sq ft and Sale Price > $500_000
+
+![Qualitative Features](data/assets/qual_features.PNG)
 
 
-## Feature Selection and Modeling
+## Modeling
 
-Based on correlations in training data, selected features that would give significant effects on sale price
-
-included locational dummies based on neighborhood
-
-Used a LinearRegression model, fit on the training data and then made predictions on the test dataset
+- Two Models were fit on the training data
+    - A Linear Regression Model - RMSE: 0.14827
+    - A DNNRegressor using the Tensorflows Esitmator API
+    
 
 
 ### Conclusions
